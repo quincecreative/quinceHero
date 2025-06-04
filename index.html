@@ -322,7 +322,7 @@
       let speedOfCar = 0.01
       function visitePlanet(result, fakeYugo, fakeYugoFlyOff, lightSphere, starPC, createdPlanet, fakeRotatingMesh) {
         //set iframe
-        document.getElementById("iframePlanet").src = "https://work.quincemedia.com/quicePlanetGame/";
+        document.getElementById("iframePlanet").src = "https://quincecreative.github.io/quincePlanet/";
         // move astronaut
         animatePosition(scene.getMeshByName('Astronaut_primitive0'), new BABYLON.Vector3(scene.getMeshByName('Astronaut_primitive0').position.x + 800, scene.getMeshByName('Astronaut_primitive0').position.y, scene.getMeshByName('Astronaut_primitive0').position.z), 0.3)
         animatePosition(scene.getMeshByName('Astronaut_primitive1'), new BABYLON.Vector3(scene.getMeshByName('Astronaut_primitive1').position.x + 800, scene.getMeshByName('Astronaut_primitive1').position.y, scene.getMeshByName('Astronaut_primitive1').position.z), 0.3)
@@ -402,7 +402,7 @@
                     setTimeout(() => {
                       document.getElementById("webGameIframe").style.zIndex = 2
                       document.getElementById("canvasZone").style.zIndex = 1
-                      document.getElementById("iframePlanet").contentWindow.postMessage("true", "https://work.quincemedia.com/quicePlanetGame/")
+                      document.getElementById("iframePlanet").contentWindow.postMessage("true", "https://quincecreative.github.io/quincePlanet/")
                       setTimeout(() => {
                         scene.dispose()
                         // document.getElementById("canvasZone").style.display = "none"
